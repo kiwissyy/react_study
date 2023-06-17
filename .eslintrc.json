@@ -1,7 +1,13 @@
 {
-  "extends": "eslint:recommended",
+  "parserOptions": {
+    "ecmaVersion": "latest"
+  },
+  "extends": ["react-app", "prettier"],
+  "plugins": ["prettier"],
   "rules": {
-      "semi": ["error", "always"],
-      "quotes": ["error", "double"]
+    "prettier/prettier": ["error", { "endOfLine": "auto" }]
+  },
+  "env": {
+    "browser": true
   }
 }
